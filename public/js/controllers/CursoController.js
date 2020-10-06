@@ -6,9 +6,7 @@ angular.module('ifsp').controller('CursoController',
                     $scope.curso = curso;
                 },
                 function(erro) {
-                    $scope.mensagem = {
-                        texto: 'Não foi possível obter o curso.'
-                    };
+                    $scope.mensagem = { texto: 'Não foi possível obter o curso.' };
                     console.log($routeParams.cursoId);
                 }
             );
